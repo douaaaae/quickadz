@@ -107,20 +107,15 @@ function App() {
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <img src={product.imgSrc} alt={product.name} className="product-image" />
+            <div className="vid">
             <h2>{product.name}</h2>
-            <p>{product.location}</p>
             <div className="price">{product.price}</div>
+            </div>
+            <p>{product.location}</p>
           </div>
         ))}
       </div>
-
-
      </div>
-
-
-
-
-     
     </div>
   );
 }

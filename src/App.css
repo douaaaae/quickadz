@@ -7,13 +7,16 @@ body, html, #root {
 
 /* Style de la page */
 .background {
-  background-color: rgb(46, 40, 40);/* Changez avec votre image */
+  background: rgb(30, 30, 30); 
   background-size: cover;
   background-position: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 40px ;
   height: 100vh;
   display: flex;
+  margin: 10px;
   flex-direction: column;
-  color: white;
+  color: #ffffff;
 }
 
 /* Navbar */
@@ -22,14 +25,16 @@ body, html, #root {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: rgb(46, 40, 40); 
+  background: rgb(30, 30, 30); 
   position: sticky;
   top: 0;
   z-index: 10;
+  border-radius: 30px;
+  
 }
 
 .logo h1 {
-  color: #f1ece0; /* Couleur du texte */
+  color: #ffffff; /* Couleur du texte */
   font-size: 1.8rem; /* Taille du logo */
   font-weight: bold;
   margin-left: 40px;
@@ -60,7 +65,7 @@ body, html, #root {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -96,17 +101,16 @@ body, html, #root {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-family: Arial, sans-serif;
-  width: 80%;
-  height: 270px;
-  
-  margin-left: 10%;
- 
+  height: 240px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: -40px;
 }
 
 .pp {
-  margin: 0;
   font-size: 2rem;
   font-weight: bolder;
+  text-align: center;
   color: black;
   margin: 20px;
   padding: 3%;
@@ -125,17 +129,9 @@ body, html, #root {
 
 .all{
   background-color: white;
-  border-radius: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  margin-left: 5%;
   padding-top: 2%;
-
+  
 }
-
-
-
-
 .header {
   text-align: start;
   margin-left: 5%;
@@ -178,7 +174,7 @@ body, html, #root {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 50px;
   margin-left: 5%;
   margin-right: 5%;
   padding-bottom: 5%;
@@ -188,10 +184,10 @@ body, html, #root {
   background: #efefef;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 380px;
+  width: 360px;
   margin-bottom: 2%;
 }
 
@@ -199,7 +195,10 @@ body, html, #root {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
-
+.vid{
+  display: flex;
+  gap: 110px;
+}
 .product-card img {
   max-width: 100%;
   height: auto;
