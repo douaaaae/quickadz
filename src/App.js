@@ -57,6 +57,7 @@ function App() {
   return (
     <div className="App">
       <div className="background">
+        
         <nav className="navbar">
           <div className="logo">
             <h1>AdzQuick</h1>
