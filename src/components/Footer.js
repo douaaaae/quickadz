@@ -1,4 +1,3 @@
-import React from 'react';
 import './Foote.css';
 import logo from '../images/adz-removebg-preview.png';
 export default function Footer() {
