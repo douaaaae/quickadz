@@ -1,0 +1,30 @@
+.foot{
+    background-color: black;
+    height: 20vh;
+    border-radius: 20px;
+    margin: 40px 10px 10px 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.container2{
+    display: flex;
+    gap: 120px;
+}
+.row2{
+    line-height: 13px;
+}
+.row2 a{
+    line-height: 15px;
+    text-decoration: none;
+    color: white;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    margin-top: -75px;
+}
+.row2 p{
+    width: 130px;
+}
