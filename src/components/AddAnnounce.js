@@ -44,6 +44,7 @@ const AddAnnounce = () => {
         prix: '',
         ville: '',
         photos: [],
+        datePoster: '',
       });
     } else {
       alert('Veuillez remplir tous les champs obligatoires.');
@@ -91,8 +92,9 @@ const AddAnnounce = () => {
               onChange={handleChange}
             >
               <option value="">Sélectionnez une catégorie</option>
-              <option value="Immobilier">Immobilier</option>
-              <option value="Véhicules">Véhicules</option>
+              <option value="Frames">Frames</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Electronics">Electronics</option>
             </select>
           </div>
           <div className="form-groupp1">
@@ -129,6 +131,10 @@ const AddAnnounce = () => {
               onChange={handleFileChange}
             />
           </div>
+        <div className='form-groupp2'>
+          <label htmlFor="datePoster">Date Poster</label>
+            <input type="text" name='datePoster' value={annonce.datePoster} onChange={handleChange} placeholder="La date de l'annonce"/>
+          </div> 
         </div>
 
         {/* Bouton */}

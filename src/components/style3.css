@@ -16,7 +16,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 60%;
-    height: 470px;
+    height: 530px;
   }
   
   /* Titre */
@@ -39,8 +39,16 @@
     display: flex;
     flex-direction: column;
   }
-  
-  .form-groupp1 label {
+  .form-groupp2{
+    margin-top: 80px;
+    margin-left: -550px;
+    margin-right: 150px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-groupp1 label, .form-groupp2 label {
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -54,7 +62,9 @@
     width: 100%;
   }
   .form-groupp1 input,
-  .form-groupp1 textarea{
+  .form-groupp1 textarea,
+  .form-groupp2 input
+  {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -73,7 +83,7 @@
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 7px;
     margin-left: 10%;
     transition: background 0.3s, transform 0.2s;
   }
