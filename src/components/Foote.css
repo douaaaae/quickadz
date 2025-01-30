@@ -36,6 +36,18 @@
     size: 1188px;
     color: white;
 }
+@media (max-width: 480px){
+    .input90{
+        height: 40px ;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #797979;
+        width: 400px;
+        padding: 20px;
+        size: 1188px;
+        color: white;
+    }
+}
 .btn78{
     background-color: whitesmoke;
     border-radius: 0%;
@@ -78,4 +90,7 @@ hr{
 }
 .select option{
     color: #333;
+}
+@media screen and (max-width: 1024px){
+
 }

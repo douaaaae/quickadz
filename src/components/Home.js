@@ -7,11 +7,20 @@ import logo1 from '../images/The phone.jpeg';
 import logo2 from '../images/Chair.jpeg';
 import {CircleArrowLeft, CircleArrowRightIcon}from "lucide-react";
 export default function Home() {
-      const aboutUs= useRef(null);
-      const scrollToAboutUs = () => {
-        aboutUs.current?.scrollIntoView({ behavior: 'smooth' });
-      };
-      
+  
+  const aboutUsRef = useRef(null);
+  const reviewsRef = useRef(null)
+  
+  const scrollToReviews = ()=>{
+    if(reviewsRef.current){
+      reviewsRef.current.scrollIntoView({behavior : "smooth", block : "start"})
+    }
+  }
+  const scrollToAboutUs = () => {
+    if (aboutUsRef.current) {
+      aboutUsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
        const products = [
         {
           id: 1,
@@ -144,7 +153,7 @@ export default function Home() {
     
     <div className="App">
       <div className={darkMode ? "darkBack" : "background"}>
-      <Navbar dark={darkMode} setDark={setDarkMode} scrollToAboutUs={scrollToAboutUs} />
+      <Navbar dark={darkMode} setDark={setDarkMode} scrollToAboutUs={scrollToAboutUs} scrollToReviews={scrollToReviews} />
 
         <div className="content">
           <img src={logo} className='imgLogo' alt="" />
@@ -155,7 +164,7 @@ export default function Home() {
           </div>
         </div>
     </div>
-  <div className={darkMode? "darkAll" : "all"} ref={aboutUs}>
+  <div className={darkMode? "darkAll" : "all"} >
       <div className="header2">
        <div className="header">
           <h1 className="h11">{text.h1}</h1>
@@ -178,7 +187,7 @@ export default function Home() {
     <div className={darkMode? "darkAll" : "all"}>
     
       <div className="content" >
-          <div className='content3'>
+          <div className='content3' ref={aboutUsRef}>
              <h1 className= {darkMode? "bowlby-one-sc-regular darkH1" : 'bowlby-one-sc-regular h1'}>{text.title5} <br />{text.title6}</h1>
              <p className={ darkMode? "darkpar1" :'par1'}>{text.description6} <br /> {text.description7}</p>
              <Link to="/About"><button className={darkMode? "darkmt-4" :'mt-4'}>{text.button2}</button></Link>
@@ -189,7 +198,7 @@ export default function Home() {
           </div>
       </div>
     
-    <div className='divid' >
+    <div className='divid' ref={reviewsRef} >
     <button onClick={handlePrev} className="text-2xl" >
           <CircleArrowLeft style={{ width: "40px", height: "40px" }}/>
         </button>
