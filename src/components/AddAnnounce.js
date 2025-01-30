@@ -13,6 +13,7 @@ const AddAnnounce = () => {
     prix: '',
     ville: '',
     photos: [],
+    datePoster : '',
   });
 
   const handleChange = (e) => {
@@ -71,15 +72,10 @@ const AddAnnounce = () => {
               required
             />
           </div>
-          <div className="form-groupp1">
-            <label htmlFor="description">Description:</label>
-            <textarea
-              name="description"
-              value={annonce.description}
-              onChange={handleChange}
-              placeholder="Description de l'annonce"
-            ></textarea>
-          </div>
+          <div className='form-groupp1'>
+          <label htmlFor="datePoster">Date Poster</label>
+            <input type="text" name='datePoster' value={annonce.datePoster} onChange={handleChange} placeholder="La date de l'annonce"/>
+          </div>    
         </div>
 
         {/* Deuxième ligne */}
@@ -131,10 +127,17 @@ const AddAnnounce = () => {
               onChange={handleFileChange}
             />
           </div>
-        <div className='form-groupp2'>
-          <label htmlFor="datePoster">Date Poster</label>
-            <input type="text" name='datePoster' value={annonce.datePoster} onChange={handleChange} placeholder="La date de l'annonce"/>
-          </div> 
+        </div>
+        <div className="form-row">
+        <div className="form-groupp1">
+            <label htmlFor="description">Description:</label>
+            <textarea
+              name="description"
+              value={annonce.description}
+              onChange={handleChange}
+              placeholder="Description de l'annonce"
+            ></textarea>
+          </div>
         </div>
 
         {/* Bouton */}

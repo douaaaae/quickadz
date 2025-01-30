@@ -104,9 +104,15 @@
     .form-containerr22 {
         width: 100%;
         padding: 20px;
-        height: 730px;
+        height: 878px;
     }
-  
+    .form-groupp2{
+      margin-top: -10px;
+      margin-left: 0px;
+    }
+     .form-groupp2 input{
+      width: 400px ;
+     }
     .form-row {
         flex-direction: column;
         gap: 20px;
@@ -125,7 +131,7 @@
   @media (max-width: 480px) {
     .form-containerr22 {
         padding: 15px;
-        height: 730px;
+        height: 830px;
     }
   
     .h2h2 {
