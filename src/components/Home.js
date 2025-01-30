@@ -6,6 +6,7 @@ import logo from '../images/wow.jpeg';
 import logo1 from '../images/The phone.jpeg';
 import logo2 from '../images/Chair.jpeg';
 import {CircleArrowLeft, CircleArrowRightIcon}from "lucide-react";
+import { animate } from 'framer-motion';
 export default function Home() {
   
   const aboutUsRef = useRef(null);

@@ -146,7 +146,7 @@ export default function Home() {
           <div className='content2'>
           <h1 className='bowlby-one-sc-regular'>{text.title1} <br /> {text.title2} <br />{text.title3} <br />{text.title4}</h1>
           <p className='par'>{text.description1} <br /> {text.description2} <br />{text.description3} <span className='macondo-regular'>QuickADZ</span> {text.description4} <br /> {text.description5}</p>
-          <Link to="/Annonces"><button className={darkMode? "darkBtn" : ""} >{text.button1} </button></Link>
+          <Link to="/AnnonceAd"><button className={darkMode? "darkBtn" : ""} >{text.button1} </button></Link>
           </div>
         </div>
     </div>

@@ -13,7 +13,7 @@ export default function Navbar({dark, setDark, scrollToAboutUs, scrollToReviews}
       <div className="nav-links">
         <Link to="/" className={dark? "darkLi": "li"}>Home</Link>
         <Link to="/Sign" className={dark? "darkLi": "li"}>Sign up</Link>
-        <Link onClick={() => {scrollToAboutUs()}} className={dark? 'darkLi' : 'li'}>About Us</Link>
+        <Link  onClick={() => {scrollToAboutUs()}} className={dark? 'darkLi' : 'li'}>About Us</Link>
         <Link onClick={()=> {scrollToReviews()}} className={dark? "darkLi": "li"}>Reviews</Link>
       </div>
       </div>
