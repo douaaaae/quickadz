@@ -4,7 +4,7 @@
     background-color: #333;
     color: whitesmoke;
     padding-top: 50px;
-    height: 400px;
+    height: auto;
 }
 .vid1{
     margin-right: 90px;
@@ -31,22 +31,11 @@
     outline: none;
     background-color: transparent;
     border: 1px solid #797979;
-    width: 400px;
+    width: auto;
+    max-width: 400px;
     padding: 20px;
     size: 1188px;
     color: white;
-}
-@media (max-width: 480px){
-    .input90{
-        height: 40px ;
-        outline: none;
-        background-color: transparent;
-        border: 1px solid #797979;
-        width: 400px;
-        padding: 20px;
-        size: 1188px;
-        color: white;
-    }
 }
 .btn78{
     background-color: whitesmoke;
@@ -64,6 +53,7 @@ hr{
 .div3{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .divid4{
     font-family: "Nunito", serif;
@@ -91,6 +81,32 @@ hr{
 .select option{
     color: #333;
 }
-@media screen and (max-width: 1024px){
-
+@media (max-width: 768px){
+   .vid2{
+    margin-right: 20px;
+   }
+   .btn78{
+    margin-top: 10px;
+    width: 150px;
+   }
+   .div3{
+    justify-content: space-evenly;
+   }
+   .div{
+    flex-wrap: nowrap;
+   }
+}
+@media (max-width: 480px){
+    .vid2{
+        margin-right: 20px;
+       }
+       .btn78{
+        margin-top: 10px;
+       }
+       .div3{
+        justify-content: space-evenly;
+       }
+       .div{
+        flex-wrap: nowrap;
+       }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbarad.css';
-import logo from '../images/adz-removebg-preview.png';
 import logo1 from '../images/adz-w.jpg';
 export default function Navbar({dark, setDark}) {
   return (
