@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 4%;
     background-color: #333;
   }
   .bd{
@@ -16,7 +16,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 60%;
-    height: 530px;
+    height: 550px;
   }
   
   /* Titre */
@@ -75,7 +75,7 @@
   /* Bouton */
   .submit-button {
     width: 80%;
-    padding: 12px;
+    
     background: linear-gradient(to right, #405e81, #243B55);
     color: white;
     border: none;
