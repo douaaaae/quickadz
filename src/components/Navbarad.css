@@ -1,0 +1,95 @@
+
+/* Navbar Container */
+.navbar {
+    background-color: transparent;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+  }
+.darknav{
+  background-color: transparent;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+  
+ .img50{
+  width: 20%;
+  margin-left:-26px ;
+  margin-top: 10px;
+ }
+
+  .img51{
+    width: 30%;
+    margin-left: 20px;
+  }
+  /* Nav Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Individual Link */
+  .li1 {
+    text-decoration: none;
+    font-family: "Nunito", serif;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .darkLi{
+    text-decoration: none;
+    font-family: "Nunito", serif;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .darkLi:hover{
+    color: #6b6969;
+  }
+  .li1:hover {
+    color: lightgray;
+  }
+  
+  /* Search & Right Section */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .search-input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-right {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
+  }
+  

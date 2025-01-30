@@ -1,30 +1,81 @@
-.foot{
-    background-color: black;
-    height: 20vh;
-    border-radius: 20px;
-    margin: 40px 10px 10px 10px;
-    padding: 10px 20px;
+.vidid{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+    color: whitesmoke;
+    padding-top: 50px;
+    height: 400px;
+}
+.vid1{
+    margin-right: 90px;
+}
+.image14{
+    width: 190px;
+}
+.paragraph{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family: "Nunito", serif;
+
+}
+.paragraph1{
+    margin-left: 40px;
+    margin-top: 236px;
+    font-family: "Nunito", serif;
+}
+.paragraph2{
+    font-family: "Nunito", serif;
+}
+.input90{
+    height: 40px ;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #797979;
+    width: 400px;
+    padding: 20px;
+    size: 1188px;
+    color: white;
+}
+.btn78{
+    background-color: whitesmoke;
+    border-radius: 0%;
+    margin-left: 10px;
+
+}
+.FaArrow{
+    color: #656565;
+    margin-left: 10px;
+}
+hr{
+    color: white;
+}
+.div3{
+    display: flex;
+    justify-content: space-between;
+}
+.divid4{
+    font-family: "Nunito", serif;
+}
+.head{
+    font-family: "Nunito", serif;
+    padding-bottom: 15px;
+}
+.wid23{
     display: flex;
     justify-content: center;
+}
+.pat{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.select{
+    width:130px;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
     color: white;
+    border: 0px;
 }
-.container2{
-    display: flex;
-    gap: 120px;
-}
-.row2{
-    line-height: 13px;
-}
-.row2 a{
-    line-height: 15px;
-    text-decoration: none;
-    color: white;
-}
-.img{
-    width: 250px;
-    height: 250px;
-    margin-top: -75px;
-}
-.row2 p{
-    width: 130px;
+.select option{
+    color: #333;
 }
