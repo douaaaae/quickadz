@@ -437,6 +437,9 @@ button:active{
     position: static; /* Remove absolute positioning */
     margin-top: 20px; /* Add spacing between images */
   }
+  button{
+    margin-bottom: 10px;
+  }
 }
 
 /* For screens smaller than 768px */
@@ -458,6 +461,9 @@ button:active{
 
   .text-2xl {
     margin: 10px 0; /* Adjust button spacing */
+  }
+  button{
+    margin-bottom: 10px;
   }
 }
 
