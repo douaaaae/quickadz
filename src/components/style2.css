@@ -162,3 +162,69 @@
       font-size: 1rem;
       margin: 10px 0 0;
     }
+    @media (min-width: 1440px) {
+      .tabs-section {
+        padding: 30px;
+        margin-right: 5%;
+      }
+    
+      .tabs-section h1 {
+        font-size: 30px;
+      }
+    
+      .tabs-container {
+        gap: 15px;
+      }
+    
+      .tab {
+        padding: 10px 25px;
+        font-size: 16px;
+      }
+    
+      .product-container {
+        justify-content: center; 
+        gap: 25px;
+      }
+    
+      .product-card {
+        width: 320px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    
+      .product-card img {
+        height: 350px;
+      }
+    
+      .description {
+        font-size: 18px;
+        padding: 20px;
+      }
+    
+      .description h3 {
+        font-size: 20px;
+      }
+    
+      .description p {
+        font-size: 18px;
+      }
+    
+      .masonry-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        padding: 30px;
+      }
+    
+      .grid-item {
+        height: 500px;
+      }
+    
+      .grid-title {
+        font-size: 1.8rem;
+      }
+    
+      .grid-description {
+        font-size: 1.2rem;
+      }
+    }
+    

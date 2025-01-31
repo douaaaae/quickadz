@@ -66,3 +66,46 @@
     font-weight: 400;
     font-style: normal;
   }
+  @media (min-width: 1440px) {
+    .product-container1 {
+      justify-content: center; 
+      gap: 30px; 
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1600px; 
+    }
+  
+    .product-card1 {
+      width: 320px; 
+    }
+  
+    .product-card1 img {
+      height: 350px; 
+    }
+  
+    .description1 {
+      padding: 20px; 
+    }
+  
+    .description1 h3 {
+      font-size: 20px; 
+    }
+  
+    .description1 p {
+      font-size: 18px;
+    }
+  
+    .delete-button {
+      width: 200px; 
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  
+    .h22 {
+      font-size: 32px; 
+    }
+  
+    .p22 {
+      font-size: 18px;
+    }
+  }

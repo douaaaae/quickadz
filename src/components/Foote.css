@@ -81,32 +81,38 @@ hr{
 .select option{
     color: #333;
 }
-@media (max-width: 768px){
-   .vid2{
-    margin-right: 20px;
-   }
-   .btn78{
-    margin-top: 10px;
-    width: 150px;
-   }
-   .div3{
-    justify-content: space-evenly;
-   }
-   .div{
-    flex-wrap: nowrap;
-   }
+@media (max-width: 768px) {
+    .vidid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .vid1, .vid2 {
+        margin-right: 0;
+    }
+    .div3 {
+        justify-content: center;
+    }
+    .btn78 {
+        width: 40%;
+        margin-bottom: 15px;
+    }
 }
-@media (max-width: 480px){
-    .vid2{
-        margin-right: 20px;
-       }
-       .btn78{
+
+/* 📌 Mobile */
+@media (max-width: 480px) {
+    .vidid {
+        padding: 30px 10px;
+    }
+    .input90 {
+        width: 40%;
         margin-top: 10px;
-       }
-       .div3{
-        justify-content: space-evenly;
-       }
-       .div{
-        flex-wrap: nowrap;
-       }
+    }
+    .btn78 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .div3 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
