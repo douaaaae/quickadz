@@ -20,8 +20,8 @@ export default function Navbar({dark, setDark}) {
       <div className={`navbar-menu ${isMobileMenuOpen ? "active" : ""}`}>
         <Link to="/Member" className={dark? "darkLi": "li"}>Home</Link>
         <Link to="/AddAn" className={dark? "darkLi": "li"}>Add Announce</Link>
-        <Link to="/AboutUs" className={dark? "darkLi": "li"}>About Us</Link>
-        <Link to="/Reviews" className={dark? "darkLi": "li"}>Reviews</Link>
+        <Link to="#" className={dark? "darkLi": "li"}>About Us</Link>
+        <Link to="#" className={dark? "darkLi": "li"}>Reviews</Link>
         <Link to="/" className={dark? "darkLi" : "li"}>Logout</Link>        
       </div>
     </nav>

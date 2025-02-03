@@ -10,8 +10,8 @@ export default function NavSign() {
       <div className="nav-right">
       <div className="nav-links">
         <Link to="/" className="li">Home</Link>
-        <Link to="/AboutUs" className="li">About Us</Link>
-        <Link to="/Reviews" className="li">Reviews</Link>
+        <Link to="#" className="li">About Us</Link>
+        <Link to="#" className="li">Reviews</Link>
       </div>
       </div>
     </nav>
