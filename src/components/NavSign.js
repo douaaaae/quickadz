@@ -5,8 +5,8 @@ import logo from '../images/adz-removebg-preview.png';
 export default function NavSign() {
   return (
     <nav className="navbar">
-        <img src={logo} alt="" className="img50" />
-    
+        <Link to='/'><img src={ logo} alt="" className="img50" /></Link>
+
       <div className="nav-right">
       <div className="nav-links">
         <Link to="/" className="li">Home</Link>

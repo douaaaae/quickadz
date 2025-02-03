@@ -33,7 +33,7 @@ export default function Footer1() {
             </div>
             <div className="divid4">
              <p><FaPhone/> +212 645890329</p>
-             <p><FaRegEnvelope/> hajarkarrar@gmail.com</p>
+             <p><FaRegEnvelope/> hajardouae@gmail.com</p>
              <p><FaGlobe/></p>
              </div>
          </div>

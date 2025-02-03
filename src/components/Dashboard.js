@@ -4,7 +4,7 @@ import { Bar, Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, ArcElement, Tooltip, Legend } from 'chart.js';
 import Navbar from './NavAdmin';
 import Footer1 from './Footer2';
-
+import './Dash.css';
 ChartJS.register(BarElement, CategoryScale, LinearScale, ArcElement, Tooltip, Legend);
 
 const Dashboard = () => {
@@ -69,7 +69,7 @@ const Dashboard = () => {
      
     <div className="bg-gray-100 min-h-screen p-6">
        <Navbar />
-      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Dashboard</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center dash">Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
         <div className="bg-white rounded-lg shadow p-4" style={{ width: '70%',  margin: 'auto', marginTop:'2%'  }}>

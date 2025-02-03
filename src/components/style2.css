@@ -46,6 +46,7 @@
     .product-container {
       display: flex;
       flex-wrap: wrap; 
+      justify-content: center;
     }
     
    
@@ -93,7 +94,7 @@
       margin: 0;
       padding: 0;
       background-color: #333;
-      height: 100vh;
+      height: auto;
       color: #fff;
     }
     
@@ -162,19 +163,26 @@
       font-size: 1rem;
       margin: 10px 0 0;
     }
-    @media (min-width: 1440px) {
+/*     @media (min-width:1201px){
+      .product-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+      }
+    } */
+    @media (max-width: 480px) {
       .tabs-section {
         padding: 30px;
         margin-right: 5%;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
       }
     
       .tabs-section h1 {
         font-size: 30px;
       }
     
-      .tabs-container {
-        gap: 15px;
-      }
     
       .tab {
         padding: 10px 25px;
@@ -210,13 +218,14 @@
       }
     
       .masonry-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-top: 20px;
+        gap: 5px;
         padding: 30px;
       }
     
       .grid-item {
-        height: 500px;
+        height: 3100px;
       }
     
       .grid-title {

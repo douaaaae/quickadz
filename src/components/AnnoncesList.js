@@ -52,7 +52,7 @@ const ListeAnnonces = () => {
   </div>
 </div>
 
-      <div className='tabs-section'>
+    <div className='tabs-section'>
       <h1>/All Annonce</h1>
         <div className="tabs-container">
         <button className="tab active">Filter By</button>
@@ -69,7 +69,7 @@ const ListeAnnonces = () => {
           <option value="Tanger">Tanger</option>
         </select>
         </div>
-      </div>
+    </div>
       <div className="product-container">
         {filteredAnnonces.length > 0 ? (
           filteredAnnonces.map((annonce) => (

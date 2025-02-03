@@ -55,10 +55,67 @@
     color: lightgray;
   }
   
-  /* Search & Right Section */
+/* Search & Right Section 
   .nav-right {
     display: flex;
     align-items: center;
     gap: 15px;
+  } */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  /* Mobile Menu Toggle */
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 98%;
+    margin-top: -40px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  .bar2{
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: row;
+      width: 100%;
+      background-color: transparent;
+      position: absolute;
+      top: 60px;
+      text-align: end;
+      margin-left: -20px;
+      padding-left: 20px;
+    }
+  
+    .navbar-menu.active {
+      display: flex;
+    }
+  
+    .navbar-item {
+      margin: 0;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
   }
   

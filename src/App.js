@@ -20,16 +20,13 @@ function App() {
   <div>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/Annonce" element={<Annonces/>}/>
-{/*       <Route path="/Filtre" element={<Filter/>}/>
-      <AnnoncesList/> */}
+            <Route path="/Annonce" element={<Annonces/>}/>
             <Route path="/About" element={<AboutUs/>}/>
             <Route path="/Sign" element={<SignUp/>}/>
             <Route path="/Annonces"  element={<AnnoncesList/>} />
             <Route path='/Admin' element={<AdminHome/>} />
             <Route path="/Manage" element={<ListeAnnonces2/>} />
             <Route path="/Member" element={<HomePage/>} />
-{/*             <Route path="/AddAn" element={<AddAnnonce/>} />*/}
             <Route path="/AddAn" element={<AddAnnounce/>}/>
             <Route path='/Dashboard' element={<Dashboard/>} />
             <Route path="/AnnonceAd" element={<ListeAnnoncesA/>}/>
