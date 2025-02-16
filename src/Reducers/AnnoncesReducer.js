@@ -9,6 +9,8 @@ const initialState = {
       photos: ["The Squish Sectional.jpeg"],
       ville: "Rabat",
       datePoster: "2024-11-24",
+      by: "Mohammed Mazzi",
+      email: "mazzi@gmail.com",
     },
     {
       id: 2,
@@ -19,6 +21,8 @@ const initialState = {
       photos: ["table.jpeg"],
       ville: "Casablanca",
       datePoster: "2024-12-22",
+      by: "Ali",
+      email: "alii@gmail.com",
     },
     {
       id: 3,
@@ -29,6 +33,8 @@ const initialState = {
       photos: ["Shop — abide art studio.jpeg"],
       ville: "Rabat",
       datePoster: "2024-12-20",
+      by: "Ayaa",
+      email: "ayaa@gmail.com",
     },
     {
       id: 4,
@@ -39,6 +45,8 @@ const initialState = {
       photos: ["lamp.jpeg"],
       ville: "Tanger",
       datePoster: "2024-12-20",
+      by: "Yahya Kamal",
+      email: "yahya.kamal@gmail.com",
     },
     {
       id: 5,
@@ -49,6 +57,8 @@ const initialState = {
       photos: ["BANG & OLUFSEN Beoplay H95 Headphones - Brown.jpeg"],
       ville: "Tanger",
       datePoster: "2024-10-20",
+      by: "Mohammed Mazzi",
+      email: "mazzi@gmail.com",
     },
     {
       id: 6,
@@ -59,6 +69,8 @@ const initialState = {
       photos: ["dec1.jpg"],
       ville: "Tanger",
       datePoster: "2024-12-18",
+      by: "Houda Kamel",
+      email: "houda.kamel@gmail.com",
     },
     {
       id: 7,
@@ -69,6 +81,8 @@ const initialState = {
       photos: ["white.jpeg"],
       ville: "Tanger",
       datePoster: "2024-12-18",
+      by: "Ayaa",
+      email: "ayaa@gmail.com",
     },
     {
       id: 8,
@@ -79,6 +93,8 @@ const initialState = {
       photos: ["Jellyfish.jpeg"],
       ville: "Tanger",
       datePoster: "2024-12-20",
+      by: "Mohammed Mazzi",
+      email: "mazzi@gmail.com",
     },
     {
       id:9,
@@ -88,7 +104,9 @@ const initialState = {
       prix : 250,
       photos : ["marshall.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-23"
+      datePoster : "2024-12-23",
+      by: "Roudayna Kamal",
+      email: "roudayna@gmail.com",
     },
     {
       id:10,
@@ -98,7 +116,9 @@ const initialState = {
       prix : 550,
       photos : ["3d.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-21"
+      datePoster : "2024-12-21",
+      by: "Mohammed Mazzi",
+      email: "mazzi@gmail.com",
     },    {
       id:11,
       titre : "Carolyn Misterek",
@@ -107,7 +127,9 @@ const initialState = {
       prix : 250,
       photos : ["Brown Frame.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-23"
+      datePoster : "2024-12-23",
+      by: "Zaid Zehrouni",
+      email: "zaid.zehrouni@gmail.com",
     },    {
       id:12,
       titre : "Laptop stand",
@@ -116,7 +138,9 @@ const initialState = {
       prix : 150,
       photos : ["Amazon_com_ Laptop Stand, Lamicall Laptop Riser….jpeg"],
       ville : "Rabat",
-      datePoster : "2024-12-23"
+      datePoster : "2024-12-23",
+      by: "Imad",
+      email: "i.mad@gmail.com",
     },    {
       id:13,
       titre : "Couch",
@@ -125,7 +149,9 @@ const initialState = {
       prix : 250,
       photos : ["beige.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-2"
+      datePoster : "2024-12-2",
+      by: "Ali",
+      email: "alii@gmail.com",
     },
     {
       id:14,
@@ -135,7 +161,9 @@ const initialState = {
       prix : 250,
       photos : ["phonecase4.jpeg"],
       ville : "Casablanca",
-      datePoster : "2024-02-20"
+      datePoster : "2024-02-20",
+      by: "Yhya Kamal",
+      email: "yahya.kamal@gmail.com",
     },
     {
       id:15,
@@ -145,7 +173,9 @@ const initialState = {
       prix : 350,
       photos : ["frame2.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-2"
+      datePoster : "2024-12-2",
+      by: "Houda Kamel",
+      email: "houda.kamel@gmail.com",
     },
     {
       id:16,
@@ -155,7 +185,9 @@ const initialState = {
       prix : 200,
       photos : ["AirPods Max.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-30"
+      datePoster : "2024-12-30",
+      by: "Ayaa",
+      email: "ayaa@gmail.com",
     },
     {
       id:17,
@@ -165,7 +197,9 @@ const initialState = {
       prix : 250,
       photos : ["Sofas.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-2"
+      datePoster : "2024-12-2",
+      by: "Yahya kamal",
+      email: "yahya.kamal@gmail.com",
     },
     {
       id:18,
@@ -175,7 +209,9 @@ const initialState = {
       prix : 650,
       photos : ["dinner table.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-10-12"
+      datePoster : "2024-10-12",
+      by: "Mohammed Mazzi",
+      email: "mazzi@gmail.com",
     },
     {
       id:19,
@@ -185,7 +221,9 @@ const initialState = {
       prix : 250,
       photos : ["Caseative Case.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-2"
+      datePoster : "2024-12-2",
+      by: "Yahya Kamal",
+      email: "yahya.kamal@gmail.com",
     },
     {
       id:20,
@@ -195,7 +233,9 @@ const initialState = {
       prix : 250,
       photos : ["light.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-2"
+      datePoster : "2024-12-2",
+      by: "Roudayna Kamal",
+      email: "roudayna@gmail.com",
     },
     {
       id:21,
@@ -205,7 +245,9 @@ const initialState = {
       prix : 250,
       photos : ["flower.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-12-2"
+      datePoster : "2024-12-2",
+      by: "Houda Kamel",
+      email: "houda.kamel12@gmail.com",
     },
     {
       id:22,
@@ -215,7 +257,9 @@ const initialState = {
       prix : 250,
       photos : ["Microsoft Surface Laptop 3 - An Awesome Travel Laptop.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-10-2"
+      datePoster : "2024-10-2",
+      by: "Mohammed Mazzi",
+      email: "mazzi@gmail.com",
     },
     {
       id:23,
@@ -225,7 +269,9 @@ const initialState = {
       prix : 250,
       photos : ["Burrard.jpeg"],
       ville : "Rabat",
-      datePoster : "2023-12-2"
+      datePoster : "2023-12-2",
+      by: "Hatim Ziani",
+      email: "hatim.ziani@gmail.com",
     },
     {
       id:24,
@@ -235,7 +281,9 @@ const initialState = {
       prix : 250,
       photos : ["beige.jpeg"],
       ville : "Tanger",
-      datePoster : "2024-01-2"
+      datePoster : "2024-01-2",
+      by: "Ayaa",
+      email: "ayaa@gmail.com",
     },
     
   ],
@@ -266,7 +314,7 @@ const AnnoncesReducer = (state = initialState, action) => {
     case 'ADD_ANNONCE': 
       return {
         ...state,
-        annonces: [...state.annonces, { id: state.annonces.length + 1, ...action.payload }],
+        annonces: [...state.annonces,action.payload ],
       };
     case 'DELETE_ANNONCE': 
       return {

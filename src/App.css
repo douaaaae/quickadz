@@ -180,6 +180,7 @@ button:active{
   margin-left: 3%;
   margin-right: 5%;
   padding-bottom: 5%;
+  
 }
 
 .product {
@@ -191,6 +192,7 @@ button:active{
   height: auto;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 380px;
+  justify-content: center;
 }
 
 .product:hover:hover {

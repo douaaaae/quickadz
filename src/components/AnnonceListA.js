@@ -4,10 +4,11 @@ import { setCategoryFilter, setCityFilter } from '../Action/AnnoncesActions';
 import { getFilteredAnnonces } from '../Action/selectors';
 import './style2.css';
 import Footer1 from './Footer2';
-import Navbar from './AdminNav';
+import Navbar from './Navbar';
 import logo1 from '../images/Chair.jpeg';
 import logo2 from '../images/phonecase.jpeg';
 import logo3 from '../images/wh.jpeg';
+import { div } from 'framer-motion/client';
 const ListeAnnonces = () => {
   const dispatch = useDispatch();
   const filteredAnnonces = useSelector(getFilteredAnnonces);
@@ -52,7 +53,7 @@ const ListeAnnonces = () => {
   </div>
 </div>
 
-      <div className='tabs-section'>
+    <div className='tabs-section'>
       <h1>/All Annonce</h1>
         <div className="tabs-container">
         <button className="tab active">Filter By</button>
@@ -69,10 +70,11 @@ const ListeAnnonces = () => {
           <option value="Tanger">Tanger</option>
         </select>
         </div>
-      </div>
+    </div>
       <div className="product-container">
         {filteredAnnonces.length > 0 ? (
           filteredAnnonces.map((annonce) => (
+          
             <div key={annonce.id} className="product-card">
               <div className="image">
                 <img src={annonce.photos[0]} alt={annonce.titre} />
@@ -81,7 +83,14 @@ const ListeAnnonces = () => {
                 <h3>{annonce.titre}</h3>
                 <p>Prix: {annonce.prix} €</p>
               </div>
+              <div className='divov'>
+                <h6 >{annonce.by}</h6>
+                <h6>{annonce.email}</h6>
+                <button>Contact me</button>
+              </div>
             </div>
+          
+            
           ))
         ) : (
           <p>Aucune annonce trouvée.</p>
