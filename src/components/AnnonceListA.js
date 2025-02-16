@@ -4,7 +4,7 @@ import { setCategoryFilter, setCityFilter } from '../Action/AnnoncesActions';
 import { getFilteredAnnonces } from '../Action/selectors';
 import './style2.css';
 import Footer1 from './Footer2';
-import Navbar from './Navbar';
+import Navbar from './AdminNav';
 import logo1 from '../images/Chair.jpeg';
 import logo2 from '../images/phonecase.jpeg';
 import logo3 from '../images/wh.jpeg';
