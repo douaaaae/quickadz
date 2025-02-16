@@ -13,7 +13,8 @@ const AddAnnounce = () => {
     prix: '',
     ville: '',
     photos: [],
-    datePoster : '',
+    by: '',
+    email : '',
   });
 
   const handleChange = (e) => {
@@ -45,7 +46,8 @@ const AddAnnounce = () => {
         prix: '',
         ville: '',
         photos: [],
-        datePoster: '',
+        by : '',
+        email : '',
       });
     } else {
       alert('Veuillez remplir tous les champs obligatoires.');
@@ -53,16 +55,17 @@ const AddAnnounce = () => {
   };
 
   return (
-  <body className='bd'>
+  <div className='bd'>
     <Navbar/>
     <div className="containerr22">
+      
     <div className="form-containerr22">
       <h2 className='h2h2'>Ajouter une Annonce</h2>
       <form onSubmit={handleSubmit}>
         {/* Première ligne */}
         <div className="form-row">
           <div className="form-groupp1">
-            <label htmlFor="titre">Titre:</label>
+            <label htmlFor="titre">Titre :</label>
             <input
               type="text"
               name="titre"
@@ -72,16 +75,21 @@ const AddAnnounce = () => {
               required
             />
           </div>
-          <div className='form-groupp1'>
-          <label htmlFor="datePoster">Date Poster</label>
-            <input type="text" name='datePoster' value={annonce.datePoster} onChange={handleChange} placeholder="La date de l'annonce"/>
-          </div>    
+          <div className="form-groupp1">
+            <label htmlFor="description">Description :</label>
+            <textarea
+              name="description"
+              value={annonce.description}
+              onChange={handleChange}
+              placeholder="Description de l'annonce"
+            ></textarea>
+          </div>
         </div>
 
         {/* Deuxième ligne */}
         <div className="form-row">
           <div className="form-groupp1">
-            <label htmlFor="categorie">Catégorie:</label>
+            <label htmlFor="categorie">Catégorie :</label>
             <select
               name="categorie"
               value={annonce.categorie}
@@ -94,7 +102,7 @@ const AddAnnounce = () => {
             </select>
           </div>
           <div className="form-groupp1">
-            <label htmlFor="prix">Prix (€):</label>
+            <label htmlFor="prix">Prix (€) :</label>
             <input
               type="number"
               name="prix"
@@ -109,7 +117,7 @@ const AddAnnounce = () => {
         {/* Troisième ligne */}
         <div className="form-row">
           <div className="form-groupp1">
-            <label htmlFor="ville">Ville:</label>
+            <label htmlFor="ville">Ville :</label>
             <select name="ville" value={annonce.ville} onChange={handleChange}>
               <option value="">Sélectionnez une ville</option>
               <option value="Rabat">Rabat</option>
@@ -118,7 +126,7 @@ const AddAnnounce = () => {
             </select>
           </div>
           <div className="form-groupp1">
-            <label htmlFor="photos">Image(s):</label>
+            <label htmlFor="photos">Image(s) :</label>
             <input
               type="file"
               name="photos"
@@ -129,14 +137,19 @@ const AddAnnounce = () => {
           </div>
         </div>
         <div className="form-row">
-        <div className="form-groupp1">
-            <label htmlFor="description">Description:</label>
-            <textarea
-              name="description"
-              value={annonce.description}
+          <div className="form-groupp1">
+            <label htmlFor="by">Name :</label>
+            <input type="text" name='by' value={annonce.by} onChange={handleChange} placeholder='your name' />
+          </div>
+          <div className="form-groupp1">
+            <label htmlFor="email">E-mail :</label>
+            <input
+              type="email"
+              name="email"
+              value={annonce.email}
               onChange={handleChange}
-              placeholder="Description de l'annonce"
-            ></textarea>
+              placeholder='your email'
+            />
           </div>
         </div>
 
@@ -146,10 +159,10 @@ const AddAnnounce = () => {
         </button>
       </form>
     </div>
-  </div> 
-  <Footer1/>
-  </body>
    
+  </div>
+   <Footer1/>
+  </div>
   );
 };
 
