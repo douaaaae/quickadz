@@ -15,10 +15,12 @@ import AddAnnounce from "./components/AddAnnounce";
 import Dashboard from "./components/Dashboard";
 import ListeAnnoncesA from "./components/AnnonceListA";
 import ListeAnnonceM from './components/AnnonceListM';
+import Project from "./Project";
 function App() {
   return(
   <div>
-    <Routes>
+{/*     <Project/>
+ */}     <Routes>
       <Route path="/" element={<Home/>}/>
             <Route path="/Annonce" element={<Annonces/>}/>
             <Route path="/About" element={<AboutUs/>}/>
@@ -31,7 +33,7 @@ function App() {
             <Route path='/Dashboard' element={<Dashboard/>} />
             <Route path="/AnnonceAd" element={<ListeAnnoncesA/>}/>
             <Route path="/AnnonceM" element={<ListeAnnonceM/>} />
-    </Routes>
+    </Routes> 
    
   </div>
   )
